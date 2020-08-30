@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    zookeeper:
+      connect-string: gray.light:2181
+      config:
+        root: config/gray-light
+        watcher:
+          enabled: false

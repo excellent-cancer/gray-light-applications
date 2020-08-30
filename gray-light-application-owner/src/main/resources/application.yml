@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: owner-application
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    zookeeper:
+      discovery:
+        root: /services/gray-light
+        register: true
+        instance-host: 127.0.0.1
+        instance-port: 8080

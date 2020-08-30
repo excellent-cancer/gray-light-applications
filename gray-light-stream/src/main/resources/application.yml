@@ -1,0 +1,12 @@
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: gray.light.*.entity
+spring:
+  cloud:
+    stream:
+      binders:
+  datasource:
+    password: 110120
+    username: root
+    url: jdbc:mysql://localhost:6446/experimental?allowMultiQueries=true
+    name: experimental

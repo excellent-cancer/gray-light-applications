@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: hello-application
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    zookeeper:
+      discovery:
+        root: /services/gray-light
+        register: false
+server:
+  port: 8081
