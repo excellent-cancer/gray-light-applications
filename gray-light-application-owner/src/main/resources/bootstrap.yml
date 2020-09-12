@@ -1,8 +1,8 @@
 spring:
   cloud:
     zookeeper:
-      connect-string: gray.light:2181
+      connect-string: ${ZOOKEEP_CLUSTER}
       config:
         root: config/gray-light
         watcher:
-          enabled: false
+          enabled: true
