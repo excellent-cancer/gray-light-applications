@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: document-application
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    zookeeper:
+      discovery:
+        root: /services/gray-light
+        register: true
+        instance-host: 127.0.0.1
+        instance-port: 8081
+server:
+  port: 8081
